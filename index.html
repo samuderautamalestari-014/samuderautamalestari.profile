@@ -9,6 +9,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+.profile-download {
+  padding: 28px 0;
+  background: #fff;
+}
+
+.profile-download-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 30px 35px;
+  border: 1px solid #dfe7ed;
+  border-radius: 16px;
+  background: #f7fafc;
+}
+
+.profile-download-box h2 {
+  font: 800 27px/1.15 Manrope, sans-serif;
+  color: #092b4c;
+  margin: 0 0 8px;
+}
+
+.profile-download-box p:not(.eyebrow) {
+  margin: 0;
+  color: #637486;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .profile-download-box {
+    display: block;
+    padding: 25px;
+  }
+
+  .profile-download-box .btn {
+    margin-top: 20px;
+  }
+}
 </head>
 <body>
   <header class="site-header" id="top">
@@ -43,7 +81,12 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#services">Lihat Layanan <span>→</span></a>
-            <a class="btn btn-ghost" href="#about">Profil Perusahaan</a>
+<a class="btn btn-ghost"
+   href="assets/company-profile-samudera-utama-lestari.pdf"
+   target="_blank"
+   rel="noopener">
+  Company Profile PDF <span>↗</span>
+</a>
           </div>
           <div class="hero-trust">
             <span>✓ Profesional</span>
@@ -101,7 +144,25 @@
         </div>
       </div>
     </section>
+<section class="profile-download">
+  <div class="container profile-download-box">
+    <div>
+      <p class="eyebrow">COMPANY PROFILE</p>
+      <h2>Kenali PT. Samudera Utama Lestari lebih lengkap.</h2>
+      <p>
+        Unduh company profile resmi untuk melihat profil, visi & misi,
+        serta layanan perusahaan.
+      </p>
+    </div>
 
+    <a class="btn btn-primary"
+       href="assets/company-profile-samudera-utama-lestari.pdf"
+       target="_blank"
+       rel="noopener">
+      Buka Company Profile <span>↗</span>
+    </a>
+  </div>
+</section>
     <section class="section services-section" id="services">
       <div class="container">
         <div class="section-heading">
